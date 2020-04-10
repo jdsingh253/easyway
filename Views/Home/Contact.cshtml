@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<!--Contact Section-->
+<section id="contact" class="section-bg wow fadeInUp" style="background-color:#dbf1e7">
+    <div class="section-header">
+        <h3>Contact Us</h3>
+     </div>
+    <div class="row contact-info">
+        <div class="col-md-4">
+                <div class="contact-address">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <h3>Address</h3>
+                    <address>
+                        21 John St,<br>
+                        London (ON), Canada.
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+1234512345">+1 234512345</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:ancsharma18@gmail.com">jhaj@gmail.com</a></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Feedback </strong> Form <span></span></h4>
+                    <div class="form">
+                        <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
+                            <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                            <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                            <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+                            <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea>
+                            <input type="submit" value="submit" name="submit" class="txt2">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-7">
+                    <!--Google map-->
+                    <div id="map-container-google-1" class="z-depth-1-half map-container">
+                        <iframe src="https://maps.google.com/maps?q=regal%20consultancy%20jalandhar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "CQC Licence Demo";
+}
+<section id="about">
+    <div class="container">
+        <header class="section-header">
+            <h3>CQC Licence Demo</h3>
+        </header>
+    </div>
+</section>
+<div class="row text-center text-lg-left well">
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#exampleModal1" class="d-block mb-4 h-100">
+            <figure>
+                <video id="model_video" class="img-thumbnail img-responsive " src="~/images/video1.mp4" alt=""></video>
+                <figcaption>CQC Licence Demo 1</figcaption>
+            </figure>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#exampleModal2" class="d-block mb-4 h-100">
+            <figure>
+                <video id="model_video" class="img-thumbnail img-responsive" src="~/images/video2.mp4" alt=""></video>
+                <figcaption>CQC Licence Demo 2</figcaption>
+            </figure>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#exampleModal3" class="d-block mb-4 h-100">
+            <figure>
+                <video id="model_video" class="img-thumbnail img-responsive " src="~/images/video1.mp4" alt=""></video>
+                <figcaption>CQC Licence Demo 3</figcaption>
+            </figure>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#exampleModal4" class="d-block mb-4 h-100">
+            <figure>
+                <video id="model_video" class="img-thumbnail img-responsive" src="~/images/video2.mp4" alt=""></video>
+                <figcaption>CQC Licence Demo 4</figcaption>
+            </figure>
+        </a>
+    </div>
+</div>
+<div class="text-center container">
+    <a asp-action="drivingschool" asp-controller="services" style="text-decoration:none; vertical-align:middle;" data-toggle="modal" class="d-block mb-4 h-100">
+        <h1>
+            <span class="label label-primary">
+                Click here for Premium Version
+            </span>
+        </h1>
+    </a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Play Now: Tutorial</h5>
+                <button type="button" onclick="document.getElementById('demoVideo').pause();" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <video id="demoVideo" class="img-responsive" controls src="~/images/video1.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Play Now: Tutorial</h5>
+                <button type="button" onclick="document.getElementById('demoVideo2').pause();" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <video id="demoVideo2" class="img-responsive" controls src="~/images/video2.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Play Now: Tutorial</h5>
+                <button type="button" onclick="document.getElementById('demoVideo3').pause();" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <video id="demoVideo3" class="img-responsive" controls src="~/images/video1.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Play Now: Tutorial</h5>
+                <button type="button" onclick="document.getElementById('demoVideo4').pause();" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <video id="demoVideo4" class="img-responsive" controls src="~/images/video2.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="about">
+    <div class="container">
+        <header class="section-header">
+            <h3>Fees Detail</h3>
+        </header>
+    </div>
+</section>
+<div class="row">
+    <div class="table-responsive col-md-6">
+        <table class="table table-hover">
+            <thead class="bg-danger">
+                <tr>
+                    <th scope="col">Course Type</th>
+                    <th scope="col">Fees</th>
+                </tr>
+            </thead>
+            <tbody class="bg-info">
+                <tr>
+                    <td>Single Student</td>
+                    <td>$ 1050.00</td>
+                </tr>
+            </tbody>
+            <tbody class="bg-info">
+                <tr>
+                    <td>Two Student</td>
+                    <td>Special Discount</td>
+                </tr>
+            </tbody>
+            <tbody class="bg-info">
+                <tr>
+                    <td>Husband/Wife</td>
+                    <td>Special Discount</td>
+                </tr>
+            </tbody>
+            <tbody class="bg-info">
+                <tr>
+                    <td>Unemployed Student</td>
+                    <td>Special Discount</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6 well">
+         <div class="form_main">
+             <h4 class="heading"><strong>Sunday Free Classes </strong> Form <span></span></h4>
+             <div class="form">
+                 <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
+                     <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                     <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                     <input type="submit" value="submit" name="submit" class="txt2">
+                  </form>
+                </div>
+           </div>
+    </div>
+</div>
+        
